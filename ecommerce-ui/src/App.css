@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.listings_section_listing_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+   
+  }
+   
+.listing {
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  padding: .2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
+
+  }
+
+.listing_image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.rental_image {
+  border-radius: 2px;
+  padding: .2rem;
+  width: 100%;
+  height: 100%;
+}    
+
+.listing_text {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14% 14% 14% 14%;
+    text-align: left;
+    vertical-align: top;
+  }  
+
+.listing_type{
+  grid-column: 1;
+  grid-row: 1;
+} 
+.listing_name{
+  grid-column: 1;
+  grid-row: 2;
+}  
+.listing_price{
+  grid-column: 1;
+  grid-row: 3;
+}  
+.listing_host{
+  grid-column: 1;
+  grid-row: 4;
+}   
+
+p.a{
+  vertical-align: top;
+  color:gray;
+  font: 13px arial, sans-serif;
+}
+
+p.b{
+  vertical-align: top;
+  font: initial bold 12px/30px Georgia, serif;
+}
+
+p.c{
+  vertical-align: top;
+  color:gray;
+  font: 12px/20px Georgia, serif;
+
+}
+
+p.d{
+  vertical-align: top;
+  color:gray;
+  font: 12px/20px Georgia, serif;
+  
+}
+
+.listing_host.d{
+  vertical-align: top;
+  color:gray;
+  font: 12px/20px Georgia, serif;
+  
+}
+
+span{
+  vertical-align: top;
+  color:gray;
+  font: 12px/20px Georgia, serif;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
